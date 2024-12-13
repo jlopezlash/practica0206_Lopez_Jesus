@@ -27,16 +27,14 @@ while Opc != '6':         #Voy ha dar opciones en un menú de la siguiente maner
             print('No aparece el alumno con el nif ' + nif)
     if Opc == '3':
         nif = input('Dime el nif ')
-        for clave, valor in Alumnos[nif].items():
+        for clave, valor in Alumnos[nif]:
                 print(clave.title() + ':', valor)
-        else:
-            print('No aparece el alumno con el nif ' + nif)
     if Opc == '4':
         print('Lista de alumnos')
         for clave, valor in Alumnos.items():
             print(clave, valor['nombre'])
     if Opc == '5':
-        print('Lista de clientes aprobados')
+        print('Lista de alumnos aprobados')
         for clave, valor in Alumnos.items():
             if valor['aprobado']:
-                print(clave, valor['nombre'])
+                print(clave, valor['nombre']) 
