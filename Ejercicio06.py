@@ -36,5 +36,5 @@ while Opc != '6':         #Voy ha dar opciones en un menú de la siguiente maner
     if Opc == '5':
         print('Lista de alumnos aprobados')
         for clave, valor in Alumnos.items():
-            if valor['aprobado']:
-                print(clave, valor['nombre']) 
+            if valor['aprobado']=='Si':
+                print(clave, valor['nombre'])
